@@ -15,15 +15,76 @@ img {
   max-width: 100%;
 }
 
-body {
-  display: grid;
-  place-content: center;
-  height: 100vh;
+a {
+  text-decoration: none;
+  color: black;
 }
+
+/* header styles */
+
+.header-wrapper {
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav .bxl-google {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(#1a4774ee, rgb(48, 193, 255));
+  color: red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo h2 {
+  font-size: 4rem;
+  background: -webkit-linear-gradient(#1a4774ee, rgb(48, 193, 255));
+  color: red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Dropdown  */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: aliceblue;
+  padding: 20px;
+  gap: 2rem;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 8px;
+  position: absolute;
+  top: 3rem;
+  z-index: 99;
+  display: none;
+}
+
+.dropdown:hover .dropdown-link {
+  color: blue;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/* newsletter styles  */
 
 .newsletter {
   min-height: 500px;
-  background: linear-gradient(124deg, #a0c5f4, #9ce9f1);
+  margin-top: 10rem;
 }
 
 .container {
@@ -33,6 +94,7 @@ body {
 
 .newsletter-wrapper {
   display: flex;
+  background: linear-gradient(124deg, #a0c5f4, #9ce9f1);
 }
 
 .newsletter-wrapper > * {
