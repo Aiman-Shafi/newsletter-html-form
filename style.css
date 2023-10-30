@@ -96,17 +96,9 @@ form input,
 
 textarea:focus,
 input:focus {
-  /* background-color: red; */
-  /* border-bottom: 2px solid red; */
-  /* border-radius: 0;  */
   background-color: aliceblue;
   outline: none;
 }
-/* 
-.submit {
-  width: 200px;
-  align-self: center;
-} */
 
 @media (max-width: 996px) {
   .form-wrapper-content {
