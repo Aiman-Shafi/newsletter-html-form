@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--  Responsive (font sizes)
+     Form Building
+     Github 
+    CSS Dropdown 
+    Netlify  -->
+
+    <main>
+      <section class="newsletter">
+        <div class="container newsletter-wrapper">
+          <div class="form-content">
+            <img src="coffee.jpg" alt="" />
+          </div>
+          <div class="form-wrapper">
+            <form action="https://formspree.io/f/mqkvnrbq" method="POST">
+              <div class="form-wrapper-content">
+                <h2>Subscribe to our newsletter</h2>
+              </div>
+              <!-- User Name  -->
+              <div class="from-wrapper-username">
+                <input type="text" name="name" placeholder="Eg. John Doe" />
+                <i class="bx bxs-user"></i>
+              </div>
+              <!-- User Email  -->
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Eg. example@example.com"
+              />
+
+              <!-- User Message  -->
+
+              <textarea
+                class="form-message"
+                name="message"
+                cols="30"
+                rows="10"
+                placeholder="Hi.. there"
+              ></textarea>
+              <input type="submit" class="submit" value="Send Now" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

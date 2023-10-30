@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.newsletter {
+  min-height: 500px;
+  background: linear-gradient(124deg, #a0c5f4, #9ce9f1);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.newsletter-wrapper {
+  display: flex;
+}
+
+.newsletter-wrapper > * {
+  flex-basis: 100%;
+}
+
+.form-content img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.form-wrapper {
+  background: linear-gradient(124deg, #a0c5f4, #9ce9f1);
+  /* display: grid;
+  place-content: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  max-width: 400px;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: rgb(27, 27, 27);
+  border-radius: 6px;
+}
+
+.form-wrapper-content {
+  color: white;
+  font-size: 2rem;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form input,
+.form-message {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-radius: 6px;
+  border: none;
+}
+
+.from-wrapper-username {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+  border-radius: 8px;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.bx {
+  font-size: 2rem;
+}
+
+textarea:focus,
+input:focus {
+  /* background-color: red; */
+  /* border-bottom: 2px solid red; */
+  /* border-radius: 0;  */
+  background-color: aliceblue;
+  outline: none;
+}
+/* 
+.submit {
+  width: 200px;
+  align-self: center;
+} */
+
+@media (max-width: 996px) {
+  .form-wrapper-content {
+    font-size: 1.5rem;
+  }
+  form {
+    max-width: 350px;
+  }
+
+  .form-message {
+    height: 160px;
+  }
+}
+
+@media (max-width: 870px) {
+  .newsletter-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-content img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .form-wrapper-content {
+    font-size: 1.5rem;
+  }
+
+  form {
+    margin-top: -5px;
+    max-width: 350px;
+  }
+}
