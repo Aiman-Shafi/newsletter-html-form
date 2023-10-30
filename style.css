@@ -22,12 +22,17 @@ a {
 
 /* header styles */
 
+header {
+  background-color: rgb(227, 227, 227);
+}
+
 .header-wrapper {
   font-size: 2.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 0;
+  /* background-color: rgb(227, 227, 227); */
 }
 
 nav {
@@ -68,6 +73,7 @@ nav .bxl-google {
   border-radius: 8px;
   position: absolute;
   top: 3rem;
+  left: 0;
   z-index: 99;
   display: none;
 }
@@ -94,7 +100,7 @@ nav .bxl-google {
 
 .newsletter-wrapper {
   display: flex;
-  background: linear-gradient(124deg, #a0c5f4, #9ce9f1);
+  background-color: rgb(27, 27, 27);
 }
 
 .newsletter-wrapper > * {
@@ -107,7 +113,9 @@ nav .bxl-google {
 }
 
 .form-wrapper {
-  background: linear-gradient(124deg, #a0c5f4, #9ce9f1);
+  /* background: linear-gradient(124deg, #a0c5f4, #9ce9f1); */
+  background-color: rgb(27, 27, 27);
+
   /* display: grid;
   place-content: center; */
   display: flex;
@@ -116,13 +124,14 @@ nav .bxl-google {
 }
 
 form {
-  max-width: 400px;
+  width: 400px;
   padding: 4rem;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   background-color: rgb(27, 27, 27);
   border-radius: 6px;
+  border: 1px solid rgb(130, 130, 130);
 }
 
 .form-wrapper-content {
@@ -167,7 +176,7 @@ input:focus {
     font-size: 1.5rem;
   }
   form {
-    max-width: 350px;
+    width: 350px;
   }
 
   .form-message {
@@ -176,13 +185,17 @@ input:focus {
 }
 
 @media (max-width: 870px) {
+  .container {
+    max-width: 500px;
+    /* margin: 0; */
+  }
   .newsletter-wrapper {
     flex-direction: column;
     gap: 0;
   }
 
   .form-content img {
-    height: 200px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
   }
@@ -193,6 +206,6 @@ input:focus {
 
   form {
     margin-top: -5px;
-    max-width: 350px;
+    width: 100%;
   }
 }
